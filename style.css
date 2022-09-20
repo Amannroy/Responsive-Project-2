@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&family=IBM+Plex+Sans+Condensed&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,700&family=Roboto:wght@700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(177, 241, 243);
+   padding: 0 6px;
+}
+a{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.logo{
+    width: 130px;
+    height: 80px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    padding-left: 18px;
+}
+header{
+    height: calc(100vh - 80px);
+    background-color:skyblue;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    width: 100%;
+   
+}
+.img--header{
+    padding-left: 90px;
+}
+h2{
+    font-size: 22px;
+}
+.subheader{
+    font-size: 20px;
+}
+button{
+    background-color: rgb(0, 44, 29);
+    color: white;
+    border-radius: 15px;
+    padding: 8px 20px;
+    font-size: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+/* About */
+
+#about, #content, #contact{
+    padding: 45px 0;
+}
+h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#about{
+    background-color: blanchedalmond;
+}
+.section__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about__img--wrapper{
+    width: 40%;
+    padding: 0 24px;
+}
+.section__description--wrapper{
+    width: 60%;
+    padding: 0 24px;
+}
+.section__description--para{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* Content */
+#content{
+    background-color: rgb(252, 232, 122);
+}
+
+.content__img--wrapper{
+    width: 40%;
+    padding: 0 24px;
+}
+
+/* Contact */
+#contact{
+    background-color: lightgray;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 644px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+input,textarea{
+    margin-bottom: 24px;
+    font-size: 24px;
+    padding: 8px 12px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items:center;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0px 6px;
+    background-color: rgb(142, 86, 231);
+}
+.footer_links{
+    margin-bottom: 32px;
+}
+.footer_link{
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+/* Small Phones, Tablets, Large Smartphones */
+@media (max-width: 728px){
+    .row{
+        flex-direction: column;
+    }
+    
+    .home__description
+    {
+        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .home__description--button{
+        max-width: 220px;
+    }
+   .img--header{
+        width: 58%;
+        margin-top: 12px;
+        text-align: center;
+        justify-content: center;
+        padding-left: 3px;
+        
+    }
+    
+    
+    h2{
+        text-align: center;
+        font-size: 18px;
+    }
+    .subheader{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    ul{
+        display: none;
+    }
+    .section__description{
+        flex-direction: column;
+    }
+    .section__description--wrapper{
+        width: 100%;
+    }
+    .content__img--wrapper{
+        width: 100%;
+    }
+    #content .section__description{
+        flex-direction: column-reverse;
+    }
+    .content__img--wrapper{
+        width: 100%;
+    }
+    .about__img--wrapper{
+        width: 100%;
+    }
+    #about .section__description{
+        flex-direction: column-reverse;
+    }
+    .about__img--wrapper{
+        width: 100%;
+    }
+    footer{
+        padding: 40px 10px;
+    }
+    
+    .footer_link{
+        padding: 0 4px;
+        font-size: 13px;
+    }
+    .footer_links{
+        margin-bottom: 20px;
+    }
+}
